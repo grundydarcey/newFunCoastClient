@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable semi */
 var slideIndex = 1;
 showSlides(slideIndex);
 
