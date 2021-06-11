@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Yanone';
+    src: url('./Fonts/yanonekaffeesatz-variablefont_wght-webfont.woff');
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftlinks, .rightlinks, .logotitle {
+    flex-grow: 1;
+}
+
+.rightlinks {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url('./Images/land2.png');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.leftlinks a, .rightlinks a {
+   margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: Yanone;
+}
+
+nav {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #03989e;
+    font-size: 38px;
+}
+
+a:hover {
+    color: #03989e;
+    font-size: 23px;
+}
+
+.logoimage {
+    height: 300px;
+    width: 300px;
+}
+
+.rightlinks {
+    text-align: center;
+}
+
+.instagramlink {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.social{
+    padding: 15px 20px;
+    background-color: #000;
+}
+
+.carousel {
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 56px;
+    background-color: rgba(255, 255, 255, 0.507);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#notfirstimage {
+    display: none;
+}
+
+.carouselimage {
+    height: 400px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.info {
+    margin: 30px 75px 75px 75px;
+}
+
+section {
+    font-family: Yanone;
+}
+
+section p {
+    font-size: 20px;
+}
+
+section h1, section h2, section h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.booklink {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.book {
+    text-align: center;
+    margin: 30px 90px 50px 90px;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    padding: 50px 30px;
+    background: linear-gradient(0deg, rgba(255, 154, 59, 0.404), rgba(255, 154, 59, 0.404)), url('./Images/beachbird.jpg');
+    background-size: cover;
+    background-position: 20% 30%;
+}
+
+fieldset {
+    border: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-family: Yanone;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
