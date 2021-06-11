@@ -9,11 +9,8 @@ nav {
     justify-content: space-around;
 }
 
-.leftlinks, .rightlinks, .logotitle {
-    flex-grow: 1;
-}
 
-.rightlinks {
+.rightlinks, .leftlinks {
     display: flex;
     align-items: center;
 }
