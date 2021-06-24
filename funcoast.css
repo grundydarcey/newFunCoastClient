@@ -7,8 +7,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-weight: bold;
+    font-size: 42px;
 }
-
 
 .rightlinks, .leftlinks {
     display: flex;
@@ -28,7 +29,7 @@ header {
 }
 
 .leftlinks a, .rightlinks a {
-   margin: 0 10px;
+   margin: 0 15px;
 }
 
 a {
@@ -37,19 +38,16 @@ a {
     font-family: Yanone;
 }
 
-nav {
-    font-size: 35px;
-    font-weight: bold;
-}
-
 nav a:hover {
     color: #03989e;
-    font-size: 38px;
 }
 
-a:hover {
+.social a:hover {
     color: #03989e;
-    font-size: 23px;
+}
+
+#sociallink {
+    margin-right: 10px;
 }
 
 .logoimage {
@@ -62,18 +60,18 @@ a:hover {
 }
 
 .instagramlink {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #fff;
 }
 
-.social{
+.social {
     padding: 15px 20px;
     background-color: #000;
 }
 
 .carousel {
-    max-width: 70%;
+    max-width: 85%;
     position: relative;
     margin: auto;
 }
@@ -88,6 +86,7 @@ a:hover {
     width: 100%;
     text-align: center;
     font-weight: bold;
+    font-size: 23px;
 }
 
 #notfirstimage {
@@ -95,7 +94,12 @@ a:hover {
 }
 
 .carouselimage {
-    height: 400px;
+    height: 625px;
+    object-fit:cover;
+}
+
+#beachoutings {
+    object-position: 80% 90%;
 }
 
 .prev, .next {
@@ -121,7 +125,6 @@ a:hover {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-  
 
 .dot {
     cursor: pointer;
@@ -164,12 +167,14 @@ section {
 }
 
 section p {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 section h1, section h2, section h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 33px;
+    letter-spacing: 2px;
     font-weight: bold;
 }
 
@@ -181,12 +186,26 @@ section h1, section h2, section h3 {
 
 .book {
     text-align: center;
-    margin: 30px 90px 50px 90px;
-    font-size: 20px;
+    margin: 40px 90px 20px 90px;
+    font-size: 22px;
+}
+
+.book p {
+    font-size: 25px;
+}
+
+.book a {
+    font-size: 25px;
 }
 
 .contact {
     text-align: center;
+}
+
+.phonelink {
+    font-size: 30px;
+    text-decoration:underline;
+    font-weight: bold;
 }
 
 form {
@@ -199,13 +218,30 @@ form {
     background-position: 20% 30%;
 }
 
-fieldset {
-    border: none;
+.nameinput, .emailinput {
+    padding: 5px 20px;
+    margin-bottom: 10px;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+#form-message {
+    padding: 5px 20px;
+}
+
+.submitform {
+    background-color: #000;
+    color: #fff;
+    border-style: solid;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: Yanone;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 
 footer {
@@ -216,4 +252,188 @@ footer {
     font-weight: bold;
     padding: 30px;
     text-align: center;
+}
+
+@media all and (min-width: 640px) and (max-width: 800px) {
+   .logoimage {
+     height: 75px;
+     width: 75px;
+   }
+
+   nav {
+     font-size: 20px;
+   }
+
+   header {
+       height: 90px;
+   }
+   
+   .leftlinks a, .rightlinks a {
+       margin: 0 2px;
+   }
+
+   .instagramlink {
+       font-size: 16px;
+   }
+
+   .carousel {
+       max-width: 85%;
+   }
+
+   .carouselimage {
+       height: 295px;
+   }
+
+   .info {
+       margin: 25px;
+   }
+
+   .book {
+       margin: 45px 20px 10px 20px;
+   }
+
+   fieldset {
+     margin: 20px;
+     padding: 5px;
+     max-width: 100%;
+   }
+}
+
+@media all and (min-width: 321px) and (max-width: 639px) {
+    fieldset {
+        display: inline-block;
+        width: 0px;
+    }    
+
+    .logoimage {
+        height: 50px;
+        width: 50px;
+      }
+   
+      nav {
+        margin-top: 15px;
+        font-size: 19px;
+      }
+
+      .instagramlink {
+          font-size: 17px;
+      }
+      
+      h1, h2, h3 {
+          font-size: 20px;
+      }
+   
+      header {
+          height: 60px;
+      }
+      
+      .leftlinks a, .rightlinks a {
+          margin: 0 5px;
+      }
+   
+    .instagramlink {
+        font-size: 11px;
+    }
+
+    .social {
+        padding: 8px 5px;
+    }
+
+    .carouselimage {
+        height: 400px;
+    }
+
+    .info {
+        margin: 15px 20px;
+        font-size: 13px;
+    }
+
+    .numberform {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (min-width: 281px) and (max-width: 320px) {
+    nav {
+        font-size: 16px;
+    }
+
+    header {
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .logoimage {
+        height: 50px;
+        width: 50px;
+    }
+
+    .info {
+        margin: 10px 25px;
+    }
+
+    .carouselimage {
+        height: 350px;
+    }
+
+    .book {
+        margin: 25px 20px;
+    }
+
+    .instagramlink {
+        font-size: 17px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phonelink {
+        font-size: 17px;
+    }
+
+    .numberform {
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 280px) {
+    .logoimage {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .instagramlink {
+        font-size: 11px;
+    }
+
+    .carouselimage {
+        height: 360px;
+    }
+
+    .info {
+        margin: 20px;
+    }
+
+    .book {
+        margin: 20px 22px;
+    }
+
+    .phonelink {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        flex-direction: column;
+    }
 }

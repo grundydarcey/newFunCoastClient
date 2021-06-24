@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='funcoast.css'>
     <script src='funcoast.js'></script>
-    <title>Fun Coast Glider Tours</title>
+    <title>Fun Coast Segway Tours</title>
 </head>
 <body>
     <header>
@@ -18,47 +18,65 @@
                 <a href='#about'>
                     ABOUT US
                 </a>
+                <!-- <a href='#contact'>
+                    CONTACT
+                </a> -->
+            </div>
+            <div class='logotitle'>
+                <img src='./Images/newlogo.png' class='logoimage' alt='Fun Coast Tours Logo'>
+            </div>
+            <div class='rightlinks'>
                 <a href='#contact'>
                     CONTACT
                 </a>
-            </div>
-            <div class='logotitle'>
-                <img src='./Images/logo3.png' class='logoimage' alt='Fun Coast Tours Logo'>
-            </div>
-            <div class='rightlinks'>
-                
                 <a href='#book'>
                     BOOKING
                 </a>
-
-                <a href='tel:3863127433' class='phonelink'>
+                <!-- <a href='tel:3863127433' class='phonelink'>
                     <i class='fa fa-phone'></i><br />
                     (FUN) 312-RIDE<br />
                     (386) 312-7433
-                </a>
+                </a> -->
            </div>
         </nav>
     </header>
     <section class='social'>
         <a href='https://instagram.com/funcoast_tours' rel='noreferrer' target='_blank' class='instagramlink'>
-            <i class='fa fa-instagram'></i>
-            Follow us on Instagram to keep up with promotions and announcements!
+            <i class='fa fa-instagram' id='sociallink'></i>
+            <i class='fa fa-facebook' id='sociallink'></i>
+            Follow us on social media!
         </a>
     </section>
     <main>
         <section class='carousel'>
         <div class='mySlides fade' id='firstimage'>
-            <img src='./Images/girlonsegway.jpg' style='width:100%' class='carouselimage' >
-            <div class='text'>Glider Tours</div>
+            <img src='./Images/point.jpg' style='width:100%' class='carouselimage' >
+            <div class='text'>Guided Segway Tours</div>
         </div>   
         <div class='mySlides fade' id='notfirstimage'>
-            <img src='./Images/group.jpg' style='width:100%' class='carouselimage'>
-            <div class='text'>Group Tours</div>
+            <img src='./Images/ballpark.jpg' style='width:100%' class='carouselimage' id='beachoutings'>
+            <div class='text'>Beach Segway Outings</div>
         </div>   
         <div class='mySlides fade' id='notfirstimage'>
-            <img src='./Images/sunsetsegway.jpg' style='width:100%' class='carouselimage'>
-            <div class='text'>Beach Gliding Outings</div>
-        </div>   
+            <img src='./Images/boardwalk.jpg' style='width:100%' class='carouselimage'>
+            <div class='text'>Baseball History</div>
+        </div>
+        <div class='mySlides fade' id='notfirstimage'>
+            <img src='./Images/family.jpg' style='width:100%' class='carouselimage'>
+            <div class='text'>NASCAR History</div>
+        </div> 
+        <div class='mySlides fade' id='notfirstimage'>
+            <img src='./Images/fence.jpg' style='width:100%' class='carouselimage'>
+            <div class='text'>Daytona Beach & Ormond Beach</div>
+        </div> 
+        <div class='mySlides fade' id='notfirstimage'>
+            <img src='./Images/gliders.jpg' style='width:100%' class='carouselimage'>
+            <div class='text'>Group Tours</div> 
+        </div>
+        <div class='mySlides fade' id='notfirstimage'>
+            <img src='./Images/water.jpg' style='width:100%' class='carouselimage'>
+            <div class='text'>Historic Daytona Beach</div>
+        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -67,13 +85,17 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
           </div>
     
         </section>
         <section class='info' id='about'>
             <h1>About Us</h1>
             <p>
-                Fun Coast Glider Tours is an up and coming glider tour company serving the Daytona Beach area by way of the FUN coast. Our tours cover multiple areas of Daytona Beach and highlight the rich history in this area with a built-in gliding tour guide.<hr />
+                Fun Coast Segway Tours is an up and coming Segway tour company serving the Daytona Beach area by way of the FUN coast. Our tours cover multiple areas of Daytona Beach and highlight the rich history in this area with a built-in Segway tour guide.<hr />
             </p>
             <p>
                 We offer multiple different routes focusing on historic Daytona Beach, ghost hot-spots, beach tours and a full beach cruise. We also cover New Smyrna Beach and Ormond Beach.<hr />
@@ -82,46 +104,38 @@
                 Depending on what tour you embark on, you can learn about historic buildings, NASCAR fun-facts, and even the MTV Spring Break history in the area!<hr />
             </p>
             <p>
-                Our ghost tours will show you the deep history of the Pinewood cemetry and teach you about many ghost legends rumored to walk the streets here.<hr />
-            </p>
-            <p>
                 So if you're ready to book a tour and learn about this fantastic coast, contact us today!
             </p>
         </section>
         <section class='book' id='book'>
             <h2>Booking</h2>
-            <!-- FareHarbor book button -->
-            Ready to schedule your group's glider tour?
-            <a href="https://fareharbor.com/embeds/book/funcoasttours/?full-items=yes" class='booklink'>Book online now!</a>
+            <p>Ready to schedule your group's segway tour? Book below now!</p><br />
+            <!-- FareHarbor calendar -->
+            <script src="https://fareharbor.com/embeds/script/calendar/funcoasttours/?fallback=simple&full-items=yes"></script>
         </section>
         <section class='contact' id='contact'>
             <h3>Contact</h3>
             <form action="https://formspree.io/f/mjvjgqjo" method="post">
                 <fieldset>
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <input name="Email" id="email" type="email" className='emailinput' placeholder='Email Address'/><br />
-                            <input name='name' id='name' type='text' className='nameinput' placeholder='Name' /><br />
-                          </td>
-                          <td>
-                            <textarea id='form-message' name='message' placeholder='Talk to us!' ></textarea>
-                            <br /> 
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table><br />
-                  <button type="submit" className='submitform'>Submit</button>
-                  </fieldset>
+                    <div class='numberform'>
+                        <a href='tel:3863127433' class='phonelink'>
+                            <i class='fa fa-phone' id='phonetextlogo'></i><br />
+                            (FUN) 312-RIDE<br />
+                            (386) 312-7433
+                        </a>
+                    </div>
+                    <div class='contactform'>
+                        <input name="Email" id="email" type="email" class='emailinput' placeholder='Email Address'/><br /><br />
+                        <input name='name' id='name' type='text' class='nameinput' placeholder='Name' /><br /><br />
+                        <textarea id='form-message' name='message' placeholder='Talk to us!' ></textarea>
+                    </div>
+                  </fieldset><br />
+                  <button type="submit" class='submitform'>Submit</button>
               </form>
         </section>
     </main>
     <footer>
-        2021 @ Fun Coast Glider Tours
+        2021 @ Fun Coast Segway Tours
     </footer>
-    <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
-<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
-
 </body>
 </html>
