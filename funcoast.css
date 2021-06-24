@@ -297,6 +297,10 @@ footer {
      padding: 5px;
      max-width: 100%;
    }
+
+   form {
+       padding: 35px 20px;
+   }
 }
 
 @media all and (min-width: 321px) and (max-width: 639px) {
@@ -351,6 +355,10 @@ footer {
     .numberform {
         margin-bottom: 10px;
     }
+
+    form {
+        padding: 25px 15px;
+    }
 }
 
 @media all and (min-width: 281px) and (max-width: 320px) {
@@ -396,6 +404,10 @@ footer {
     .numberform {
         margin-bottom: 15px;
     }
+
+    form {
+        padding: 20px 10px;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 280px) {
@@ -435,5 +447,9 @@ footer {
 
     fieldset {
         flex-direction: column;
+    }
+
+    form {
+        padding: 15px 10px;
     }
 }
